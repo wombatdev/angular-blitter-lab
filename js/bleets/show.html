@@ -1,0 +1,11 @@
+
+<h3>{{BleetShowViewModel.bleet.content}}</h3>
+<h4>Likes: {{BleetShowViewModel.bleet.likes}}</h4>
+<p>Created at: {{BleetShowViewModel.bleet.created_at}}</p>
+
+<h2>Edit Bleet</h2>
+
+<form>
+    <textarea value="BleetShowViewModel.bleet.content" data-ng-model="content"></textarea>
+    <button type="button" data-ng-click="BleetShowViewModel.update(content)">Update</button>
+</form>
